@@ -1,57 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Mr. Workshop</title>
-    <meta name="keywords" content="programming, linux, chromebook, chromeOS, security research, security, ethereal workshop, ew, priism, sledstart, xiny">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://kit.fontawesome.com/c238fd34b1.js" crossorigin="anonymous"></script>
-    <script src="particles.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="app.js"></script>
-</head>
-<body>
-    <div style="position: fixed; width: 100%; height: 100%; z-index: -1;" id="particles-js"></div>
-    <!--logo and desc-->
-    <header>
-        <div style="margin-bottom: 2%;">
-            <h2>There goes Mr. Workshop, There goes Mr. Grim</h2>
-            <audio controls autoplay>
-                <source src="scrooge.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
-        </div>
-        <div style="display: flex;">
-            <img src="logo.png" style="border-radius: 5px; position: relative; left: 4%" width="25%">
-            <div style="justify-content: right; position:absolute; right: 2%;" width="75%" >
-                <img src="kxtz.png" width="80%" style="position: relative; right: -4%">
-                <img src="hate.png" width="80%" style="position: relative; right: -4%">
-                <img src="car.png" width="80%" style="position: relative; right: -4%">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mr. Workshop</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="box"><h1>There goes Mr. Workshop, There goes Mr. Grim</h1></div>
+        <div class="display">
+            <div class="box" style="width: 300px;">
+                <img class="pfp" src="mrworkshop.png" width="150px">
+                <h2>Mr. Workshop</h2>
+                <audio controls autoplay>
+                    <source src="scrooge.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box column" style="width: 300px;">
+                <img src="car.png">
+                <img src="hate.png">
+                <img src="kxtz.png">
             </div>
         </div>
-
-    </header>
-    <footer style="background-color: #111111; position: relative;">
-        <hr style="height:2px;border-width:0;color:white;background-color:white">
-        <div style="display: flex; align-items: center; justify-content: space-between; position: relative;">
-            <h6 style="text-align: left; margin-left: 4vh;">&copy; Ethereal Workshop 2025</h6>
-            <div style="display: flex; position: absolute; gap: 2vh; left: 50%; transform: translateX(-50%); color: white;">
-                <a onClick="toast('Redirecting...'); window.location.href='https://github.com/Ethereal-Workshop'">
-                    <h6 style="color: #57F287; cursor:pointer;">GitHub</h6>
-                </a>
-                <a onClick="toast('Redirecting...'); window.location.href='https://discord.gg/Wbg4sT632Q'">
-                    <h6 style="color: #5865F2; cursor:pointer;">Discord</h6>
-                </a>
-            </div>
-            <div style="margin-right: 4vh; color: white;">
-                <a onClick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                    <h6 style="cursor:pointer;">Top ↑</h6>
-                </a>
-            </div>
-        </div>
-    </footer>    
+        <script src="particles.js"></script>
+        <script src="assets/app.js"></script>
     </body>
 </html>
