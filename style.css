@@ -8,7 +8,6 @@ body {
     user-select: none;
     background-color: #131313;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Terminus', sans-serif;
@@ -17,6 +16,14 @@ body {
     padding: 25px 0;
     overflow-x: hidden;
     padding-top: 50px;
+}
+
+@media (min-width: 800px) {
+    body {
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+    }
 }
 
 audio {
